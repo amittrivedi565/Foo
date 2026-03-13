@@ -1,0 +1,18 @@
+{
+  "policy": "platinum_sub_op_manage",
+  "subject": {
+    "role": "account_manager"
+  },
+  "resource": {
+    "type": "financial_report",
+    "fy": "2026"
+  },
+  "actions": ["create", "read"],
+  "conditions": [
+    {
+      "field": "client_id",
+      "op": "=",
+      "value": "$user.client_id"
+    }
+  ]
+}
