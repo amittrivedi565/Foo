@@ -1,6 +1,11 @@
 package types
 
-type Policy struct {
-	Who string `json:"name"`
+type Role struct{
 	Contracts []string `json:"contracts"`
 }
+
+type Policy struct{
+	Roles map[string]Role `json:"roles"`
+}
+
+

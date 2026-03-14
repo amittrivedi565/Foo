@@ -6,5 +6,6 @@ type Token struct {
 	Id   string
 	Role string
 	jwt.RegisteredClaims
+
 }
 
